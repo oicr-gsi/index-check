@@ -23,6 +23,34 @@ python -m pytest
 
 # General usage
 
+## fetch_index_counts.py
+
+```
+usage: fetch_index_counts.py [-h] [--input-json INPUT_JSON]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input-json INPUT_JSON
+                        Path to input json file (default: <_io.TextIOWrapper
+                        name='<stdin>' mode='r' encoding='UTF-8'>)
+
+```
+
+Where `inputs.json` is a json array of parameters `["/path/to/counts.gz", ["index1", "index2", ... , "indexN"]]`, for example:
+```
+["/path/to/counts.gz", ["AAAAAAAA","TTTTTTTT"]]
+```
+
+and `counts.gz` is a csv file of `count,index`, for example:
+```
+92221398,AAAAAAAA
+88976066,TTTTTTTT
+84342713,CCCCCCCC
+
+...
+```
+
+
 ## check_controls.py
 
 ```
