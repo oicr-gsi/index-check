@@ -3,7 +3,7 @@
 Collection of index checking utilities
 
 # Requirements
-- Python 3.7+
+- Python 3.6+
 - virtualenv
 
 # Installation
